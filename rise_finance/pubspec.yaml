@@ -73,9 +73,22 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Schyler
+    - family: TTNormsPro
       fonts:
-        - asset: fonts/Schyler-Regular.ttf
+        - asset: fonts/TTNormsPro-Regular.ttf
+        - asset: fonts/TTNormsPro-Italic.ttf
+          style: italic
+        - asset: fonts/TTNormsPro-Bold.ttf
+          weight: 700
+        - asset: fonts/TTNormsPro-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/TTNormsPro-Light.ttf
+          weight: 300
+        - asset: fonts/TTNormsPro-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/TTNormsPro-Thin.ttf
+          weight: 100
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
