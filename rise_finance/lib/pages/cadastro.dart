@@ -25,6 +25,16 @@ class _CadastroState extends State<Cadastro> {
                 spacing: 20,
                 children: [
 
+                  Text(
+                    "Cadastro",
+                    style: TextStyle(
+                      color: Color(0xFFC1FF72),
+                      fontFamily: "TTNormsPro", 
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600             
+                    ),
+                  ),
+
                   // Nome
                   Column(
                     spacing: 5,
