@@ -75,19 +75,19 @@ flutter:
   fonts:
     - family: TTNormsPro
       fonts:
-        - asset: fonts/TTNormsPro-Regular.ttf
-        - asset: fonts/TTNormsPro-Italic.ttf
+        - asset: assets/fonts/TTNormsPro-Regular.ttf
+        - asset: assets/fonts/TTNormsPro-Italic.ttf
           style: italic
-        - asset: fonts/TTNormsPro-Bold.ttf
+        - asset: assets/fonts/TTNormsPro-Bold.ttf
           weight: 700
-        - asset: fonts/TTNormsPro-BoldItalic.ttf
+        - asset: assets/fonts/TTNormsPro-BoldItalic.ttf
           weight: 700
           style: italic
-        - asset: fonts/TTNormsPro-Light.ttf
+        - asset: assets/fonts/TTNormsPro-Light.ttf
           weight: 300
-        - asset: fonts/TTNormsPro-ExtraBold.ttf
+        - asset: assets/fonts/TTNormsPro-ExtraBold.ttf
           weight: 800
-        - asset: fonts/TTNormsPro-Thin.ttf
+        - asset: assets/fonts/TTNormsPro-Thin.ttf
           weight: 100
   #
   # For details regarding fonts from package dependencies,
