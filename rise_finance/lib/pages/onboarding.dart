@@ -55,7 +55,7 @@ class Onboarding extends StatelessWidget {
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => Cadastro()));
                 }, 
-                child: Text("Começar")
+                child: Text("Continuar")
               )
             ],
           ),
