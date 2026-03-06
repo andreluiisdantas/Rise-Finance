@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -134,7 +135,7 @@ class _LoginState extends State<Login> {
                   foregroundColor: Color(0xFFF121212)
                 ),
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
                 }, 
                 child: Text("Login")
               )
