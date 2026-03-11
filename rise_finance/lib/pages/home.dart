@@ -11,10 +11,10 @@ class Home extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             spacing: 15,
             crossAxisAlignment: CrossAxisAlignment.start, 
             children: [
-              SizedBox(height: 30), 
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -191,8 +191,142 @@ class Home extends StatelessWidget {
                   ),
                 ],
               ),
+              Column(
+                spacing: 15,
+                children: [
+                  Image.asset("assets/cartao.png", width: 350, height: 220,),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFFC1FF72),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8)
+                      ),
+                      textStyle: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, fontFamily: "TTNormsPro"),
+                      foregroundColor: Color(0xFFF121212)
+                    ),
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                    }, 
+                    child: Text("Acessar fatura")
+                  )
+                ],
+              ),
 
-              Image.asset("assets/cartao.png", width: 350, height: 220,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+
+                  // Investir
+                  GestureDetector(
+                    onTap: () {
+
+                    },
+                    child: Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFC1FF72),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            Icons.bar_chart, 
+                            size: 30, 
+                            color: Color(0xFF121212),
+                          ),
+                          SizedBox(height: 4),
+                          Text(
+                            "Investir",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: "TTNormsPro",
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFF121212),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
+
+                  // Planejar
+                  GestureDetector(
+                    onTap: () {
+
+                    },
+                    child: Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFC1FF72),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            Icons.pie_chart, 
+                            size: 30, 
+                            color: Color(0xFF121212),
+                          ),
+                          SizedBox(height: 4),
+                          Text(
+                            "Planejar",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: "TTNormsPro",
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFF121212),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+
+                  // Metas
+                  GestureDetector(
+                    onTap: () {
+
+                    },
+                    child: Container(
+                      width: 80,
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFC1FF72),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: const [
+                          Icon(
+                            Icons.task_alt, 
+                            size: 30, 
+                            color: Color(0xFF121212),
+                          ),
+                          SizedBox(height: 4),
+                          Text(
+                            "Metas",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontFamily: "TTNormsPro",
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFF121212),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
+                ]
+              )
+              
             ],
           ),
         ),
